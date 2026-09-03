@@ -4,4 +4,3 @@
 This repository accompanies the manuscript by Lou and Noppeney (xxx), 
 Preresquiste
 
-## The repository
