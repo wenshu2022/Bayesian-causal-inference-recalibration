@@ -1,0 +1,33 @@
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: flipVAE ~ abs_delta_VA + I(abs_delta_VA^2) * ComSourFlag + (1 |      sub_id)
+   Data: df_A
+Control: lmerControl(optimizer = "Nelder_Mead")
+
+REML criterion at convergence: 285534.1
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-6.5805 -0.4713 -0.0781  0.4491  5.7077 
+
+Random effects:
+ Groups   Name        Variance Std.Dev.
+ sub_id   (Intercept)  0.1268  0.3561  
+ Residual             13.8326  3.7192  
+Number of obs: 52224, groups:  sub_id, 34
+
+Fixed effects:
+                                 Estimate Std. Error         df t value Pr(>|t|)    
+(Intercept)                    -1.716e-01  8.767e-02  1.206e+02  -1.957  0.05268 .  
+abs_delta_VA                    9.972e-02  7.444e-03  5.221e+04  13.396  < 2e-16 ***
+I(abs_delta_VA^2)              -1.093e-03  2.741e-04  5.220e+04  -3.989 6.64e-05 ***
+ComSourFlag1                    1.797e-01  5.752e-02  5.192e+04   3.124  0.00178 ** 
+I(abs_delta_VA^2):ComSourFlag1  1.294e-03  2.791e-04  5.167e+04   4.635 3.57e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) ab__VA I(b__VA^2) CmSrF1
+abs_delt_VA -0.525                         
+I(bs__VA^2)  0.285 -0.889                  
+ComSourFlg1 -0.620  0.484 -0.152           
+I(__VA^2):C  0.409 -0.461  0.208     -0.661

@@ -1,0 +1,19 @@
+
+# ignore all files in any directory named build
+no_use/
+intermediate_file/
+sound_mat/
+sounds_wav/
+test_script_not_use/
+archive/
+
+# ignore doc/notes.txt, but not doc/server/arch.txt
+tmp/*.txt
+
+# ignore all .pdf files in the doc/ directory and any of its subdirectories
+tmp/**/*.pdf
+
+
+# ignore all .pdf files in the doc/ directory and any of its subdirectories
+tmp/**/*.tar
+tmp/**/*.zip
